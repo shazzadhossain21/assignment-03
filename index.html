@@ -30,8 +30,8 @@
 
 </head>
 <body class="font-sora font-normal">
-   <header class="bg-gradient-to-t from-amber-100 to-amber-50">
-    <nav class="lg:mx-20 relative">
+   <header class="bg-gradient-to-t from-amber-100 to-amber-50 w-full">
+    <nav class="mx-auto relative w-full">
         <div class="navbar">
             <div class="navbar-start">
               <div class="dropdown absolute md:right-4 right-4">
@@ -58,7 +58,7 @@
                 </ul>
               </div>
               <img class="w-10 space-x-1" src="c2-assets/leaf.png" alt="">
-              <a class=" text-2xl text-green-600 font-bold ">nature's <br>platter</a>
+              <a class=" text-2xl text-green-600 font-bold md:inline hidden">nature's <br>platter</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-sm">
@@ -93,11 +93,11 @@
    </header>
    <main>
     <!-- services Section -->
-     <section class="mt-28 lg:ml-36 w-max px-2">
-        <h2 class="font-bold text-3xl lg:text-5xl text-left text-green-600 ">Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 ">
+     <section class="mt-28 mx-auto lg:w-[90%] lg:px-2">
+        <h2 class="font-bold text-3xl lg:text-5xl lg:text-left text-green-600 text-center">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 items-center justify-center  ">
           <!-- card-1 -->
-          <div class="mt-12 w-[424px] h-[367px] flex flex-col items-center border bg-[#EFEBE3] rounded-lg">
+          <div class="mt-12 lg:w-[424px] lg:h-[367px] flex flex-col items-center border bg-[#EFEBE3] rounded-lg ">
             <div class="avatar mt-7 p-2">
                 <div class="w-24 border rounded-full">
                   <img class="bg-white" src="c2-assets/service.png" />
@@ -105,14 +105,14 @@
               </div>
               <br>
               <h3 class="font-bold lg:text-2xl text-lg">24/7 Services </h3>
-              <p class="text-gray-500 font-normal text-center my-3 px-5">Slate helps you see how 
+              <p class="text-gray-500 font-normal text-center my-3 px-5 text-sm">Slate helps you see how 
                 many more days you need 
                 to work to reach your financial 
                 goal for the month and year.</p>
                
           </div>
           <!-- card-2  -->
-          <div class="mt-12 w-[424px] h-[367px] flex flex-col items-center border bg-[#EFEBE3] rounded-lg">
+          <div class="mt-12 lg:w-[424px] lg:h-[367px] flex flex-col items-center border bg-[#EFEBE3] rounded-lg">
             <div class="avatar mt-7 p-2">
                 <div class="w-24 border rounded-full">
                   <img class="bg-white" src="c2-assets/delivery.png" />
@@ -127,7 +127,7 @@
                
           </div>
           <!-- card-3 -->
-          <div class="mt-12 w-[424px] h-[367px] flex flex-col items-center border bg-[#EFEBE3] rounded-lg">
+          <div class="mt-12 lg:w-[424px] lg:h-[367px] flex flex-col items-center border bg-[#EFEBE3] rounded-lg">
             <div class="avatar mt-7 p-2">
                 <div class="w-24 border rounded-full">
                   <img class="bg-white" src="c2-assets/healthy.png" />
@@ -146,19 +146,19 @@
      <!-- Products section -->
      <section class="my-24 bg-[#EFEBE3]">
      
-      <h2 class="font-bold text-3xl mt-14 lg:text-5xl  pl-32 text-green-600 mb-14">Popular Products</h2>
-      <div class="flex flex-col lg:flex-row gap-8 mt-24">
-        <div class="relative my-16 lg:ml-32 ml-14 pl-6 border w-[424px] bg-gradient-to-t from-green-100 to-green-400 rounded-md">
+      <h2 class="font-bold text-3xl mt-14 lg:text-5xl  lg:pl-36 text-green-600 mb-14 text-center lg:text-left">Popular Products</h2>
+      <div class="mx-auto flex flex-col lg:flex-row  gap-8 lg:mt-24 lg:pl-40">
+        <div class="relative w-[80%] lg:ml-14 pl-6 border lg:w-[424px] bg-gradient-to-t from-green-100 to-green-400 rounded-md ml-5">
           <h3 class="text-2xl lg:text-3xl text-white mt-7">30% off</h3>
           <p class="mt-7">Discover a world of treats,toys and essentials handpicked for</p>
           <button class=" mt-5 text-xl px-7 py-2 border bg-white rounded-xl">Buy Now</button>
-          <img class="relative pl-36 " src="c2-assets/vegetable-offer.png" alt="">
+          <img class="relative  pl-36" src="c2-assets/vegetable-offer.png" alt="">
           
         </div>
         <!-- cards -->
-       <div class="grid lg:grid-cols-3 grid-cols-2 gap-2 p-4">
+       <div class="grid lg:grid-cols-3 grid-cols-2 gap-1 p-4">
         <div>
-          <div class="flex bg-white  px-4 py-1 rounded-lg items-center">
+          <div class="flex bg-white  px-4 py-1 rounded-lg items-center justify-center">
             <div>
               <img src="c2-assets/onion.png" alt="">
             </div>
@@ -277,7 +277,7 @@
         </div>
       </div>
     </div>
-      <div class="">
+      <div class="md:block hidden">
         <div class="flex bg-white  px-4 py-1 rounded-lg items-center">
           <div>
             <img src="c2-assets/potato.png" alt="">
@@ -287,13 +287,116 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><p>4.5</p>
            
           </div>
-          <p class="lg:text-lg text-sm font-bold">Potato 1 KG</p>
+          <p class="lg:text-lg text-sm font-bold ">Potato 1 KG</p>
             <p class="lg:text-lg text-sm">$39.99</p>
         </div>
+       </div>
+      </div>
+     </div>
+   </section>
+     <!-- review section -->
+     <section class="my-24 bg-[#EFEBE3]">
+      <h3 class="font-bold text-3xl lg:text-5xl lg:pl-36 lg:text-left text-center text-green-600 mt-3">Customer Reviews</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center border-2 mt-16  w-[80%] mx-auto">
+        <!-- card-1 -->
+        <div class="mt-12 w-[322px] flex flex-col items-center border-2 border-green-400 ">
+          <div class="avatar block mt-7">
+            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ">
+              <img class="text-center" src="c2-assets/user-1.png" />
+            </div>
+          </div>
+            <br>
+            <p class="text-gray-500 font-normal text-center mb-3 px-5">I highly recommend</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p class="font-bold text-blue-500 mt-4">Regina Miles</p>
+              <p class="font-bold mt-4 mb-7">Banker</p>
+
+        </div>
+        <!-- card-2  -->
+        <div class="mt-12 w-[322px] flex flex-col items-center border-2 border-green-400">
+          <div class="avatar block mt-7">
+            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ">
+              <img src="c2-assets/user-2.png" />
+            </div>
+          </div>
+            <br>
+            <p class="text-gray-500 font-normal text-center mb-3 px-5">I highly recommend</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p class="font-bold text-blue-500 mt-4">Regina Miles</p>
+              <p class="font-bold mt-4 mb-7">Banker</p>
+        </div>
+        <!-- card-3 -->
+        <div class="mt-12 w-[322px] flex flex-col items-center border-2 border-green-400">
+          <div class="avatar block mt-7">
+            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ">
+              <img src="c2-assets/user-3.png" />
+            </div>
+          </div>
+            <br>
+            <p class="text-gray-500 font-normal text-center mb-3 px-5">I highly recommend</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p class="font-bold text-blue-500 mt-4">Regina Miles</p>
+              <p class="font-bold mt-4 mb-7">Banker</p>
+        </div>
+      </div>
+     </section>
+  <!-- arrival section -->
+   <section class="my-24 font-poppins lg:w-[90%] ">
+    <h1 class="font-bold text-3xl lg:mt-14 lg:text-5xl  lg:pl-36 text-green-600 mb-14 lg:text-left text-center">Arrival & Offers</h1>
+    <div class="flex flex-col lg:flex-row mx-auto ">
+      <!-- card-1 -->
+      <div class="lg:w-[780px] lg:ml-32 mt-7  bg-green-900 rounded-lg flex justify-around items-center px-2">
+        <div class="space-y-7 flex flex-col justify-center items-center w-3/5">
+          <img class="mt-7 w-full"  src="c2-assets/dawat-logo.png" alt="">
+          <p class="lg:text-lg text-sm text-white bg-green-500 rounded-lg px-10 py-2 text-center">Cook Exotic Dishes</p>
+          <h3 class="lg:text-3xl text-xl text-white font-bold text-center">UP to 20% OFF</h3>
+
+        </div>
+        <img src="c2-assets/dawat-mock-up.png" alt="">
+      </div>
+      <!-- card-2 -->
+      <div class="lg:w-[520px] lg:ml-32 mt-7  bg-blue-900 rounded-lg flex justify-around">
+        <div class="space-y-7 flex flex-col justify-center items-center ">
+          <img class="mt-3"  src="c2-assets/india-gate-logo.png" alt="">
+          <p class="text-lg text-white bg-blue-500 rounded-lg px-10 py-2">World’s No.1 Rice</p>
+          <h3 class="lg:text-3xl text-xl text-white font-bold ">UP to 40% OFF</h3>
+
+        </div>
+        <img src="c2-assets/india-gate-mock-up.png" alt="">
       </div>
     </div>
-   </div>
-     </section>
+   </section>
+ 
 
    </main>
    <footer>
